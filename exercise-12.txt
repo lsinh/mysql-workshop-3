@@ -1,0 +1,7 @@
+//List 100 phone numbers in separated parts: country code, 
+area code and line number
+
+mysql> select substring_index(content, '(' ,1) as CountryCode, 
+SUBSTRING_INDEX(SUBSTRING_INDEX(content, '(', -1), ')', 1) as AreaCode, 
+substring_index(content, ')', -1) 
+as LineNumber from Phone limit 100;   
