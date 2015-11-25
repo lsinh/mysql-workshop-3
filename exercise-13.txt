@@ -1,0 +1,31 @@
+//Exercise 13
+List the date difference, in days, between 
+AddressBook creation and modification dates
+
+mysql> select datediff(createdOn, modifiedOn) from AddressBook;
+
+(...)
+|                             615 |
+|                              41 |
+|                             180 |
+|                             220 |
+|                             420 |
+|                            -444 |
+|                             130 |
+|                            -490 |
+|                             -53 |
+|                            -245 |
+|                             192 |
+|                            -128 |
+|                             -81 |
+|                             321 |
+|                             591 |
+|                             284 |
+|                              74 |
+|                             309 |
+|                            -353 |
+|                             230 |
+|                             253 |
+|                             -77 |
++---------------------------------+
+1100 rows in set (0.01 sec)
