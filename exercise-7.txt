@@ -1,0 +1,13 @@
+//Exercise 7
+
+List all possible domain name values for ElectronicMail (email@domain.name)
+
+mysql> SELECT SUBSTRING_INDEX(ElectronicMail.content, '@', -1) AS domainName FROM ElectronicMail GROUP BY domainName;
+
+...
+
+| vulputaterisus.com                |
+| vulputaterisus.net                |
+| vulputatevelit.org                |
++-----------------------------------+
+1983 rows in set (0.01 sec)
