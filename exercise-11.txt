@@ -1,0 +1,69 @@
+//List all of the cities within the countries of Canada, Austria, 
+Isle of Man, Ireland and Japan.
+
+mysql> select country, city from Address where country =
+'Canada'|| country = 'Austria' || country = 'Isle of Man' || 
+country ='Ireland' || country = 'Japan' group by city order by country asc;
+
+
++-------------+----------------+
+| country     | city           |
++-------------+----------------+
+| Austria     | Dubbo          |
+| Austria     | Edmundston     |
+| Austria     | Hamburg        |
+| Austria     | Tauranga       |
+| Austria     | Vienna         |
+| Austria     | Alness         |
+| Austria     | Zwickau        |
+| Austria     | Shimla         |
+| Austria     | Bodmin         |
+| Austria     | Siedlce        |
+| Canada      | Cork           |
+| Canada      | Mabompr?       |
+| Canada      | Angers         |
+| Canada      | Baulers        |
+| Canada      | Hillsboro      |
+| Canada      | Pietraroja     |
+| Canada      | Anápolis       |
+| Canada      | Calmar         |
+| Canada      | Satara         |
+| Canada      | Quesada        |
+| Canada      | Tirrases       |
+| Canada      | Springfield    |
+| Canada      | San Francisco  |
+| Canada      | Rollegem       |
+| Canada      | Moulins        |
+| Ireland     | Assen          |
+| Ireland     | Raj Nandgaon   |
+| Ireland     | Jackson        |
+| Ireland     | Chestermere    |
+| Ireland     | Cartago        |
+| Ireland     | Lasnigo        |
+| Ireland     | Kraków         |
+| Ireland     | Terneuzen      |
+| Ireland     | Meridian       |
+| Ireland     | Cagnes-sur-Mer |
+| Ireland     | Galway         |
+| Isle of Man | Bremerhaven    |
+| Isle of Man | Ogbomosho      |
+| Isle of Man | Pabianice      |
+| Isle of Man | Chartres       |
+| Isle of Man | Kailua         |
+| Isle of Man | Ceyhan         |
+| Isle of Man | Denderbelle    |
+| Isle of Man | Belfast        |
+| Isle of Man | Dover          |
+| Isle of Man | San Vicente    |
+| Isle of Man | Horsham        |
+| Isle of Man | Nagaon         |
+| Japan       | ?slahiye       |
+| Japan       | Pontevedra     |
+| Japan       | Houston        |
+| Japan       | Abbeville      |
+| Japan       | Milena         |
+| Japan       | Bozeman        |
+| Japan       | Rzeszów        |
+| Japan       | Berlin         |
++-------------+----------------+
+56 rows in
