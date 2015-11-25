@@ -1,0 +1,25 @@
+//Exercise 9
+
+List all Account emails with AddressBook containing Phone 
+numbers with a country code
+
+mysql> select Account.email from Account join AddressBook on 
+-> AddressBook.accountId=Account.id join Entry on 
+-> Entry.addressBookId=AddressBook.id join
+-> Phone on Phone.entryId=Entry.id 
+-> where Phone.content not like '(%'; 
+
+
+(...)
+ Duis.ac.arcu@ascelerisque.co.uk                       |
+| Vivamus.molestie@Infaucibus.org                       |
+| lorem@apurusDuis.edu                                  |
+| ultrices.sit@arcu.co.uk                               |
+| consectetuer.rhoncus.Nullam@temporloremeget.org       |
+| dignissim.lacus@vel.ca                                |
+| iaculis.nec@magnaCrasconvallis.co.uk                  |
+| consectetuer.rhoncus.Nullam@temporloremeget.org       |
+| quam.dignissim.pharetra@sed.co.uk                     |
+| consectetuer.rhoncus.Nullam@temporloremeget.org       |
++-------------------------------------------------------+
+400 rows in set (0.02 sec)
