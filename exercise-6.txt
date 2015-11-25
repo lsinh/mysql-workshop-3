@@ -1,0 +1,12 @@
+//List all of the phone numbers for Jenkins, Charlotte
+
+mysql> select content from Phone JOIN Entry on Entry.id = Phone.entryId where firstName='Charlotte' && lastName = 'Jenkins';
++----------------+
+| content        |
++----------------+
+| (110) 167-3420 |
+| (605) 175-1334 |
+| (110) 167-3420 |
+| (605) 175-1334 |
++----------------+
+4 rows in set (0.00 sec)
